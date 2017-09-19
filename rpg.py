@@ -1,3 +1,7 @@
+from rpgClass import Hero
+from rpgClass import Goblin
+
+
 def main():
     link = Hero()
     goblin = Goblin()
