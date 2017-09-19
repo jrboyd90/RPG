@@ -1,10 +1,9 @@
-from rpgClass import Hero
-from rpgClass import Goblin
+from rpgClass import *
 
 
 def main():
-    link = Hero()
-    goblin = Goblin()
+    link = Hero(10,6)
+    goblin = Goblin(6,2)
 
     while goblin.alive() and link.alive():
         link.print_status()
@@ -26,7 +25,7 @@ def main():
         else:
             print("Invalid input {}".format(raw_input))
 
-        if goblin_health > 0:
+        if goblin.alive() > 0:
             goblin.attack(link)
 
 main()
