@@ -14,6 +14,8 @@ class Hero:
             return True
         else:
             return False
+    def print_status():
+        print("You have {} health and {} power.".format(self.health, self.power))
 
 # Making a Goblin class
 class Goblin:
@@ -30,3 +32,5 @@ class Goblin:
             return True
         else:
             return False
+    def print_status():
+        print("The Goblin has {} health and {} power.".format(self.health, self.power))

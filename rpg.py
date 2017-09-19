@@ -7,8 +7,8 @@ def main():
     goblin = Goblin()
 
     while goblin.alive() and link.alive():
-        print("You have {} health and {} power.".format(link.health, link.power))
-        print("The goblin has {} health and {} power.".format(goblin.health, goblin.power))
+        link.print_status()
+        goblin.print_status()
         print()
         print("What do you want to do?")
         print("1. fight goblin")
