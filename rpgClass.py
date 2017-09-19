@@ -9,6 +9,11 @@ class Hero:
             print("You do {} damage to the goblin.".format(self.power))
             if enemy.health <= 0:
                 print("The goblin is dead.")
+    def alive():
+        if self.health > 0:
+            return True
+        else:
+            return False
 
 # Making a Goblin class
 class Goblin:
@@ -20,3 +25,8 @@ class Goblin:
             print("The goblin does {} damage to you.".format(self.power))
             if enemy.health <= 0:
                 print("You are dead.")
+    def alive():
+        if self.health > 0:
+            return True
+        else:
+            return False
